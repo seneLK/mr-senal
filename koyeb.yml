@@ -1,0 +1,14 @@
+version: '1.0'
+services:
+  - name: whatsapp-bot
+    image: python:3.8
+    command: ["python", "app.py"]
+    env:
+      - name: MONGODB_URI
+        value: "mongodb+srv://sanarathnas0:<FbYxyBJZQisHuqWl>@cluster1.nvwcwsu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster1"
+      - name: PHONE_NUMBER
+        value: "94767707223"
+      - name: SESSION_ID
+        value: "lql1WD5A#jBV5OkAWNYkT9JP8-rMCVfu-1Ae6jaByY2mHGl3M3CI"
+    ports:
+      - 8080:8080
